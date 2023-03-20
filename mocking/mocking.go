@@ -7,6 +7,8 @@ import (
 	"time"
 )
 
+// by establishing that the Sleeper interface must only implement a function called Sleep()
+// we leave the door open for mocking
 type Sleeper interface {
 	Sleep()
 }

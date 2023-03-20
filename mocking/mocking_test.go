@@ -29,6 +29,7 @@ type SpySleeper struct {
 	Calls int
 }
 
+// this method just logs calls, and does not call time.Sleep()
 func (s *SpySleeper) Sleep() {
 	s.Calls++
 }
